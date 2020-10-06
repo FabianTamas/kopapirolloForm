@@ -52,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 14);
+            this.label1.Location = new System.Drawing.Point(63, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 0;
@@ -61,7 +61,7 @@
             // lblJatekos
             // 
             this.lblJatekos.AutoSize = true;
-            this.lblJatekos.Location = new System.Drawing.Point(114, 14);
+            this.lblJatekos.Location = new System.Drawing.Point(138, 14);
             this.lblJatekos.Name = "lblJatekos";
             this.lblJatekos.Size = new System.Drawing.Size(51, 20);
             this.lblJatekos.TabIndex = 1;
@@ -70,7 +70,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(351, 14);
+            this.label2.Location = new System.Drawing.Point(372, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 20);
             this.label2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // lblSzamitogep
             // 
             this.lblSzamitogep.AutoSize = true;
-            this.lblSzamitogep.Location = new System.Drawing.Point(455, 14);
+            this.lblSzamitogep.Location = new System.Drawing.Point(476, 14);
             this.lblSzamitogep.Name = "lblSzamitogep";
             this.lblSzamitogep.Size = new System.Drawing.Size(51, 20);
             this.lblSzamitogep.TabIndex = 3;
@@ -90,6 +90,7 @@
             this.pbJatekos.Location = new System.Drawing.Point(28, 46);
             this.pbJatekos.Name = "pbJatekos";
             this.pbJatekos.Size = new System.Drawing.Size(200, 200);
+            this.pbJatekos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbJatekos.TabIndex = 4;
             this.pbJatekos.TabStop = false;
             // 
@@ -98,6 +99,7 @@
             this.pbSzamitogep.Location = new System.Drawing.Point(346, 46);
             this.pbSzamitogep.Name = "pbSzamitogep";
             this.pbSzamitogep.Size = new System.Drawing.Size(200, 200);
+            this.pbSzamitogep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSzamitogep.TabIndex = 5;
             this.pbSzamitogep.TabStop = false;
             // 
@@ -118,6 +120,7 @@
             this.btnKo.TabIndex = 7;
             this.btnKo.Text = "Kő";
             this.btnKo.UseVisualStyleBackColor = true;
+            this.btnKo.Click += new System.EventHandler(this.btnKo_Click);
             // 
             // btnPapir
             // 
@@ -127,6 +130,7 @@
             this.btnPapir.TabIndex = 8;
             this.btnPapir.Text = "Papír";
             this.btnPapir.UseVisualStyleBackColor = true;
+            this.btnPapir.Click += new System.EventHandler(this.btnPapir_Click);
             // 
             // btnOllo
             // 
@@ -136,6 +140,7 @@
             this.btnOllo.TabIndex = 9;
             this.btnOllo.Text = "Olló";
             this.btnOllo.UseVisualStyleBackColor = true;
+            this.btnOllo.Click += new System.EventHandler(this.btnOllo_Click);
             // 
             // btnKilepes
             // 
@@ -145,6 +150,7 @@
             this.btnKilepes.TabIndex = 10;
             this.btnKilepes.Text = "Kilépés";
             this.btnKilepes.UseVisualStyleBackColor = true;
+            this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
             // 
             // btnSzabalyok
             // 
@@ -163,6 +169,7 @@
             this.btnUjJatek.TabIndex = 12;
             this.btnUjJatek.Text = "Új Játék";
             this.btnUjJatek.UseVisualStyleBackColor = true;
+            this.btnUjJatek.Click += new System.EventHandler(this.btnUjJatek_Click);
             // 
             // panel1
             // 
@@ -194,6 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnKilepes;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
